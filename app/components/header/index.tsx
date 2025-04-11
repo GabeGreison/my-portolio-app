@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 import { NavItem } from "./nav-item";
@@ -19,9 +21,9 @@ export const Header = () => {
       <div className="container flex items-center justify-between">
         <Link href="/">
           <Image
-            width={58}
-            height={49}
-            src="/images/logo.svg"
+            width={70}
+            height={70}
+            src="/images/logo.png"
             alt="header logo"
           />
         </Link>
