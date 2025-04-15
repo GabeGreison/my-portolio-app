@@ -2,18 +2,18 @@ import { Button } from "@/app/components/button";
 import { TechBadge } from "@/app/components/tech-badge";
 import Image from "next/image";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import {TbBrandGithub, TbBrandLinkedin} from "react-icons/tb";
+import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb";
 
 const MOCK_CONTACTS = [
-    {
-        url : 'https://github.com/GabeGreison',
-        icon: <TbBrandGithub/>
-    },
-    {
-        url : 'https://www.linkedin.com/in/gabriel-greison-b88b77223/',
-        icon: <TbBrandLinkedin/>
-    },
-]
+  {
+    url: "https://github.com/GabeGreison",
+    icon: <TbBrandGithub />,
+  },
+  {
+    url: "https://www.linkedin.com/in/gabriel-greison-b88b77223/",
+    icon: <TbBrandLinkedin />,
+  },
+];
 
 export const HeroSection = () => {
   return (
@@ -41,15 +41,15 @@ export const HeroSection = () => {
               </Button>
 
               <div className="text-gray-600 text-2xl flex items-center h-29 gap-3">
-                {MOCK_CONTACTS.map((contact, i )=> (
-                    <a 
+                {MOCK_CONTACTS.map((contact, i) => (
+                  <a
                     href={contact.url}
                     key={`contact- ${i}`}
                     target="_blank"
                     className="hover:text-gray-100 transition-colors"
-                    >
-                        {contact.icon}
-                    </a>
+                  >
+                    {contact.icon}
+                  </a>
                 ))}
               </div>
             </div>
