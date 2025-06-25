@@ -5,7 +5,11 @@ import { TbBrandNextjs } from "react-icons/tb";
 export const KnownTechs = () => {
   return (
     <section className="container py-16">
-      <SectionTitle subtitle="competências" title="Conhecimentos" />
+      <SectionTitle
+        subtitle="competências"
+        title="Conhecimentos"
+        classname="mb-16"
+      />
       <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt[60px]">
         {Array.from({ length: 8 }).map((_, index) => (
           <KnownTech
